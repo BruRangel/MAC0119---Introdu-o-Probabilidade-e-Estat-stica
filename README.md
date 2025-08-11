@@ -1,1 +1,1 @@
-# MAC0119---Introdu-o-Probabilidade-e-Estat-stica
+# MAC0119-Introducao-a-Probabilidade-e-Estatistica
