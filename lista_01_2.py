@@ -26,11 +26,9 @@ Z_y = 0
 sum_of_products = 0
 
 for i in range(N):
-    Z_x += (X[i] - X_mean)/X_dp
-    Z_y += (Y[i] - Y_mean)/Y_dp
-    sum_of_products += Z_x + Z_y
-
-
+    Z_x = (X[i] - X_mean)/X_dp
+    Z_y = (Y[i] - Y_mean)/Y_dp
+    sum_of_products += Z_x * Z_y
 
 r = sum_of_products/N
 
