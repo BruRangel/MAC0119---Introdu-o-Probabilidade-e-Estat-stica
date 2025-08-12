@@ -60,6 +60,7 @@ media_mais_2dp = X_mean + X_dp * 2
 print(f"Media menos 2dp: {media_menos_2dp}")
 print(f"Media mais 2dp: {media_mais_2dp}")
 
+# c)
 # Criando as classes conforme especificadas no exercício
 X_0_3 = np.array([x for x in X if x>= 0 and x < 3])
 X_3_5 = np.array([x for x in X if x >= 3 and x < 5])
@@ -98,3 +99,29 @@ X_K_dp = math.sqrt((((1.5-X_K_mean)**2)*len(X_0_3) +
           ((8.5-X_K_mean)**2)*len(X_7_10))/N)
 
 print(f"X_K_dp: {X_K_dp}")
+
+# e)
+# Seja Y o conjunto de dados tal que cada aluno recebeu 1 ponto a mais na nota final
+Y_mean = X_mean + 1
+Y_mode = X_mode + 1
+Y_median = X_median + 1
+Y_quantiles = [q + 1 for q in X_quantiles]
+Y_dm = X_dm
+Y_dp = X_dp
+Y_max_value = X_max_value
+Y_min_value = X_min_value
+Y_amplitude = X_amplitude
+
+# Exibindo os Resultados
+print("--- Medidas de Posição (aumentam em 1) ---")
+print(f"Y Média: {Y_mean:.4f}")
+print(f"Y Mediana: {Y_median}")
+print(f"Y Moda: {Y_mode}")
+print(f"Y Quartis: {Y_quantiles}")
+print(f"Y Valor Mínimo: {Y_min_value}")
+print(f"Y Valor Máximo: {Y_max_value}\n")
+
+print("--- Medidas de Dispersão (não se alteram) ---")
+print(f"Y Amplitude: {Y_amplitude}")
+print(f"Y Desvio Médio: {Y_dm:.4f}")
+print(f"Y Desvio Padrão: {Y_dp:.4f}")
