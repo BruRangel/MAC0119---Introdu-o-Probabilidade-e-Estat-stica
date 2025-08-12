@@ -112,16 +112,13 @@ Y_max_value = X_max_value
 Y_min_value = X_min_value
 Y_amplitude = X_amplitude
 
-# Exibindo os Resultados
-print("--- Medidas de Posição (aumentam em 1) ---")
+# Exibindo os Resultados após aumento
 print(f"Y Média: {Y_mean:.4f}")
 print(f"Y Mediana: {Y_median}")
 print(f"Y Moda: {Y_mode}")
 print(f"Y Quartis: {Y_quantiles}")
 print(f"Y Valor Mínimo: {Y_min_value}")
-print(f"Y Valor Máximo: {Y_max_value}\n")
-
-print("--- Medidas de Dispersão (não se alteram) ---")
+print(f"Y Valor Máximo: {Y_max_value}")
 print(f"Y Amplitude: {Y_amplitude}")
 print(f"Y Desvio Médio: {Y_dm:.4f}")
 print(f"Y Desvio Padrão: {Y_dp:.4f}")
