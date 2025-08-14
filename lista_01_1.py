@@ -108,8 +108,8 @@ Y_median = X_median + 1
 Y_quantiles = [q + 1 for q in X_quantiles]
 Y_dm = X_dm
 Y_dp = X_dp
-Y_max_value = X_max_value
-Y_min_value = X_min_value
+Y_max_value = X_max_value + 1
+Y_min_value = X_min_value + 1
 Y_amplitude = X_amplitude
 
 # Exibindo os Resultados após aumento
